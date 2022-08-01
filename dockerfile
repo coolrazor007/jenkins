@@ -20,4 +20,5 @@ RUN apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(ls
 ## Install packages
 RUN install_packages nano ansible packer terraform python3 git awscli p7zip-full
 ## Revert to the original non-root user
-USER 1001
+### Having this broke Jenkins local agent from doing much
+#USER 1001
